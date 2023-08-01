@@ -210,7 +210,7 @@ layout = html.Div(children=[
 def update_graph_live1(value):
         motor.Ligar()
         kw_list=['febre','tosse','garganta','hospital']
-        teste = pd.read_excel('google.xlsx')
+        teste = pd.read_excel('google_hospital.xlsx')
         teste.set_index('date')
         teste['dias']=teste.index
 
@@ -235,7 +235,7 @@ def update_graph_live1(value):
 def update_graph_live2(value):
         #motor.Ligar()
         kw_list=['febre','tosse','garganta','hospital']
-        teste = pd.read_excel('google.xlsx')
+        teste = pd.read_excel('google_hospital.xlsx')
         teste.set_index('date')
         teste['dias']=teste.index
         peaks4, _ = find_peaks(teste[kw_list[3]], height=60)
@@ -253,7 +253,7 @@ def update_graph_live2(value):
 def update_graph_live3(value):
         #motor.Ligar()
         kw_list=['febre','tosse','garganta','hospital']
-        teste = pd.read_excel('google.xlsx')
+        teste = pd.read_excel('google_hospital.xlsx')
         teste.set_index('date')
         teste['dias']=teste.index
         peaks4, _ = find_peaks(teste[kw_list[3]], height=60)
@@ -272,7 +272,7 @@ def update_graph_live3(value):
 def update_graph_live4(value):
         #motor.Ligar()
         kw_list=['febre','tosse','garganta','hospital']
-        teste = pd.read_excel('google.xlsx')
+        teste = pd.read_excel('google_garganta.xlsx')
         teste.set_index('date')
         teste['dias']=teste.index
 
@@ -297,7 +297,7 @@ def update_graph_live4(value):
 def update_graph_live5(value):
         #motor.Ligar()
         kw_list=['febre','tosse','garganta','hospital']
-        teste = pd.read_excel('google.xlsx')
+        teste = pd.read_excel('google_garganta.xlsx')
         teste.set_index('date')
         teste['dias']=teste.index
         peaks3, _ = find_peaks(teste[kw_list[2]], height=60)
@@ -315,7 +315,7 @@ def update_graph_live5(value):
 def update_graph_live6(value):
         #motor.Ligar()
         kw_list=['febre','tosse','garganta','hospital']
-        teste = pd.read_excel('google.xlsx')
+        teste = pd.read_excel('google_garaganta.xlsx')
         teste.set_index('date')
         teste['dias']=teste.index
         peaks3, _ = find_peaks(teste[kw_list[2]], height=60)
@@ -334,7 +334,7 @@ def update_graph_live6(value):
 def update_graph_live7(value):
         #motor.Ligar()
         kw_list=['febre','tosse','garganta','hospital']
-        teste = pd.read_excel('google.xlsx')
+        teste = pd.read_excel('google_tosse.xlsx')
         teste.set_index('date')
         teste['dias']=teste.index
 
@@ -359,7 +359,7 @@ def update_graph_live7(value):
 def update_graph_live8(value):
         #motor.Ligar()
         kw_list=['febre','tosse','garganta','hospital']
-        teste = pd.read_excel('google.xlsx')
+        teste = pd.read_excel('google_tosse.xlsx')
         teste.set_index('date')
         teste['dias']=teste.index
         peaks2, _ = find_peaks(teste[kw_list[1]], height=60)
@@ -377,7 +377,7 @@ def update_graph_live8(value):
 def update_graph_live9(value):
         #motor.Ligar()
         kw_list=['febre','tosse','garganta','hospital']
-        teste = pd.read_excel('google.xlsx')
+        teste = pd.read_excel('google_tosse.xlsx')
         teste.set_index('date')
         teste['dias']=teste.index
         peaks2, _ = find_peaks(teste[kw_list[1]], height=60)
@@ -396,7 +396,7 @@ def update_graph_live9(value):
 def update_graph_live10(value):
         #motor.Ligar()
         kw_list=['febre','tosse','garganta','hospital']
-        teste = pd.read_excel('google.xlsx')
+        teste = pd.read_excel('google_febre.xlsx')
         teste.set_index('date')
         teste['dias']=teste.index
 
@@ -420,7 +420,7 @@ def update_graph_live10(value):
 def update_graph_live11(value):
         #motor.Ligar()
         kw_list=['febre','tosse','garganta','hospital']
-        teste = pd.read_excel('google.xlsx')
+        teste = pd.read_excel('google_febre.xlsx')
         teste.set_index('date')
         teste['dias']=teste.index
         peaks1, _ = find_peaks(teste[kw_list[0]], height=60)
@@ -438,7 +438,7 @@ def update_graph_live11(value):
 def update_graph_live12(value):
         #motor.Ligar()
         kw_list=['febre','tosse','garganta','hospital']
-        teste = pd.read_excel('google.xlsx')
+        teste = pd.read_excel('google_febre.xlsx')
         teste.set_index('date')
         teste['dias']=teste.index
         peaks1, _ = find_peaks(teste[kw_list[0]], height=60)
